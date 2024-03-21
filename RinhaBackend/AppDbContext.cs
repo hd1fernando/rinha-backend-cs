@@ -20,7 +20,7 @@ public class AppDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
         var postgres = "Server=localhost;Database=postgres;Port=5432;User Id=postgres;Password=postgres; Include Error Detail=true";
-        //postgres = "Host=rinha.db;Port=5432;Database=postgres;User Id=postgres;Password=postgres; Include Error Detail=true";
+        postgres = "Host=rinha.db;Port=5432;Database=postgres;User Id=postgres;Password=postgres; Include Error Detail=true";
 
         options.UseNpgsql(postgres);
 
